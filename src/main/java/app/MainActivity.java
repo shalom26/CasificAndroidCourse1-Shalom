@@ -51,6 +51,7 @@ import app.Control.MessageHandler;
 import app.Control.RoundedTransformation;
 import app.Control.Utils;
 import app.Fragments.AboutFragment;
+import app.Fragments.GalleryFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -305,7 +306,7 @@ public class MainActivity extends AppCompatActivity {
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
         emailIntent.setType("text/plain");
         emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
-        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "I would like to get you in my crow");
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "I would like you to be on my team");
 
 
         try {
@@ -385,7 +386,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case GALLEY_INDEX:
                     //returnFragment = GalleryFragment.newInstance();
-                    returnFragment = AboutFragment.newInstance();
+                    returnFragment = GalleryFragment.newInstance();
                     break;
                 case RADIO_INDEX:
                     //returnFragment = RadioFragment.newInstance();
